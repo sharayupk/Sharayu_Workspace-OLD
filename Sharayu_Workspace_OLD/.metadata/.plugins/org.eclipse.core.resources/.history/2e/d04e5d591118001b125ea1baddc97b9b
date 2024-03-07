@@ -1,0 +1,21 @@
+package SDETJavaSession;
+
+public class Calculation {
+	
+	int x=10;
+	int y=20;
+	
+	void sum(int a,int b)
+	{
+		//System.out.println(a+b);
+		x=a;
+		y=b;
+	}
+
+	public static void main(String[] args) 
+	{
+		Calculation cal=new Calculation();
+		cal.sum(30,40);
+	}
+
+}

@@ -1,0 +1,35 @@
+package pageObjects;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+
+public class LandingRegPage {
+	
+	public WebDriver driver;
+	public LandingRegPage(WebDriver driver)
+	{
+		this.driver=driver;
+		PageFactory.initElements(driver,this);
+	}
+	
+	@FindBy(xpath = "//a[text()='My Account']")
+	WebElement myAccountDropdown;
+
+	@FindBy(linkText = "Register")
+	WebElement registerOption;
+
+	public WebElement myAccountDropdown() {
+
+		return myAccountDropdown;
+	}
+
+	public WebElement registerOption() {
+
+		return registerOption;
+	}
+}
+	
+
+

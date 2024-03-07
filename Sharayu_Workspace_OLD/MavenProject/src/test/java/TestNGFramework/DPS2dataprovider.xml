@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="DPS2Suite" parallel="tests">
+<test name="DPS2Test">
+    <classes>
+      <class name="TestNGFramework.DPS2LoginPage"/>
+      <class name="TestNGFramework.DPS2DataFetch"/>
+    </classes>
+  </test> <!-- DPS2Test -->
+</suite> <!-- DPS2Suite -->

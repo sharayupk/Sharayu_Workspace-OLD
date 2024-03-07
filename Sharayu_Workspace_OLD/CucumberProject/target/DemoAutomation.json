@@ -1,0 +1,154 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "Register an user in Demo Application",
+        "description": "",
+        "id": "demo-application-test;register-an-user-in-demo-application",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 7637971100,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "chrome is launched",
+            "match": {
+              "location": "DemoAutomationStepDef.chrome_is_launched()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 9623658998,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "application is opened",
+            "match": {
+              "location": "DemoAutomationStepDef.application_is_opened()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 507788053,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user fills fname and lname",
+            "match": {
+              "location": "DemoAutomationStepDef.user_fills_fname_and_lname()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 542943085,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user enters address and email and phone",
+            "match": {
+              "location": "DemoAutomationStepDef.user_enters_address_and_email_and_phone()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 165917072,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user clicks on gender and hobbies",
+            "match": {
+              "location": "DemoAutomationStepDef.user_clicks_on_gender_and_hobbies()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 20807648955,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user selects languages and skills and country",
+            "match": {
+              "location": "DemoAutomationStepDef.user_selects_languages_and_skills_and_country()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 238492153,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "enters country",
+            "match": {
+              "location": "DemoAutomationStepDef.enters_country()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 278526094,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "selects year and month and day",
+            "match": {
+              "location": "DemoAutomationStepDef.selects_year_and_month_and_day()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 266156024,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "fills password and conpassword",
+            "match": {
+              "location": "DemoAutomationStepDef.fills_password_and_conpassword()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 83693064,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "clicks on submit button",
+            "match": {
+              "location": "DemoAutomationStepDef.clicks_on_submit_button()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 8702978,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "validates title of the page",
+            "match": {
+              "location": "DemoAutomationStepDef.validates_title_of_the_page()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Demo Application Test",
+    "description": "",
+    "id": "demo-application-test",
+    "keyword": "Feature",
+    "uri": "./src/test/java/Features/demoAutomation.feature"
+  }
+]

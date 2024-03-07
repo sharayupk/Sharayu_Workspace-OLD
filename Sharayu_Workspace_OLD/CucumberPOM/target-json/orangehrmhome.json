@@ -1,0 +1,120 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 14,
+        "name": "Validate Home Page Test",
+        "description": "",
+        "id": "home-page-test-of-orangehrm-application;validate-home-page-test;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 9759245372,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "launch browser",
+            "match": {
+              "location": "OrangeHRMHomePageTest.launch_browser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 14797279,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "verify loginpage title",
+            "match": {
+              "location": "OrangeHRMHomePageTest.verify_loginpage_title()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2364435658,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "\"Admin\" and \"admin123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Admin",
+                  "offset": 1
+                },
+                {
+                  "val": "admin123",
+                  "offset": 13
+                }
+              ],
+              "location": "OrangeHRMHomePageTest.username_and_password(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 84545141,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "check admin text",
+            "match": {
+              "location": "OrangeHRMHomePageTest.check_admin_text()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 10944587,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "validate the url of home page",
+            "match": {
+              "location": "OrangeHRMHomePageTest.validate_the_url_of_home_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3370818323,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "mouse hover on admin and user mgmt link",
+            "match": {
+              "location": "OrangeHRMHomePageTest.mouse_hover_on_admin_and_user_mgmt_link()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 4405456803,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "click on user link and add button",
+            "match": {
+              "location": "OrangeHRMHomePageTest.click_on_user_link_and_add_button()"
+            },
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "Home Page Test of OrangeHRM Application",
+    "description": "",
+    "id": "home-page-test-of-orangehrm-application",
+    "keyword": "Feature",
+    "uri": "./src/test/java/Features/OrangeHRMHome.feature"
+  }
+]

@@ -1,0 +1,67 @@
+package Tests;
+
+import java.io.IOException;
+
+import org.testng.Assert;
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Test;
+
+import BaseTest.OrangeHRMBase;
+import Pages.OrangeHRMHomePage;
+import Pages.OrangeHRMLoginPage;
+import Pages.OrangeHRMUserPage;
+
+public class OrangeHRMHomePageTest extends OrangeHRMBase
+{
+	OrangeHRMLoginPage loginpage;
+	OrangeHRMHomePage homepage;
+	OrangeHRMUserPage userpage;
+
+	public OrangeHRMHomePageTest() throws IOException 
+	{
+		super();
+    }
+	
+	@BeforeTest
+	public void Init() throws IOException
+	{
+		Initialization();
+		
+		loginpage=new OrangeHRMLoginPage();
+		homepage=new OrangeHRMHomePage();
+		
+		//Login to application with valid credentials
+		homepage=loginpage.login(prop.getProperty("username"), prop.getProperty("password"));
+		
+	}
+	
+	@Test
+	public void homePageTest() throws InterruptedException, IOException
+	{
+		
+		Thread.sleep(2000);
+		
+		//Get Text of Home Page
+		String text=homepage.getAdminText();
+		System.out.println("Home Page Text---->"+text);
+		Assert.assertEquals("Welcome Admin", text);
+		
+		Thread.sleep(1000);
+		//Mouse Hover on Admin Link
+		homepage.HoverOnAdminLink();
+		
+		Thread.sleep(1000);
+		//Mouse Hover on user Mgmt Link
+		homepage.HoverOnUserMgmtLink();
+		
+		Thread.sleep(1000);
+		//Click on Users Link
+		homepage.clickOnUsersLink();
+		
+		Thread.sleep(1000);
+		//Click On Add Button
+		userpage=homepage.clickOnAddBtn();
+		
+		}
+
+}

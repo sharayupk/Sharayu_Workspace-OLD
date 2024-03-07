@@ -1,0 +1,125 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "Create Deals of Free CRM Application Scenario",
+        "description": "",
+        "id": "create-deals-of-free-crm-application;create-deals-of-free-crm-application-scenario",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 46281240600,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "launch browser",
+            "match": {
+              "location": "FreeCRMDealsDatatableStepDef.launch_browser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 372008708,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user enters username and password",
+            "match": {
+              "location": "FreeCRMDealsDatatableStepDef.user_enters_username_and_password(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "sudipadas1988@yahoo.in",
+                  "Sudipa@12"
+                ],
+                "line": 6
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 98403411,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user clicks on login button",
+            "match": {
+              "location": "FreeCRMDealsDatatableStepDef.user_clicks_on_login_button()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 8527000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "validates title of home page",
+            "match": {
+              "location": "FreeCRMDealsDatatableStepDef.validates_title_of_home_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3683005255,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "clicks on deals link and add new button",
+            "match": {
+              "location": "FreeCRMDealsDatatableStepDef.clicks_on_deals_link_and_add_new_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 385556739,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "enters title and probability and amount",
+            "match": {
+              "location": "FreeCRMDealsDatatableStepDef.enters_title_and_probability_and_amount(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "deals title",
+                  "20",
+                  "20"
+                ],
+                "line": 11
+              }
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 127770628,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "save button is clicked",
+            "match": {
+              "location": "FreeCRMDealsDatatableStepDef.save_button_is_clicked()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Create Deals of Free CRM Application",
+    "description": "",
+    "id": "create-deals-of-free-crm-application",
+    "keyword": "Feature",
+    "uri": "./src/test/java/Features/FreeCRMDealsDatatable.feature"
+  }
+]

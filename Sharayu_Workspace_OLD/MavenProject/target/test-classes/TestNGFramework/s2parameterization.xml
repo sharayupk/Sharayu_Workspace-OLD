@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="S2ParametersSuite">
+<parameter name="username" value="zareena.ali786@gmail.com"/>
+<parameter name="password" value="zareena.ali786@gmail.com"/>
+  <test name="S2ParametersTest">
+  <classes>
+  <class name="TestNGFramework.S2Parameterization"/>
+  </classes>
+  </test> 
+</suite> 

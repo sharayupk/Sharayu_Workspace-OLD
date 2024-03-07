@@ -1,0 +1,14 @@
+package SDETJavaSession;
+
+public class Swapping2Num {
+
+	public static void main(String[] args) 
+	{
+		int a=10;
+		int b=20;
+		
+		System.out.println("Before Swapping Value of a and b is:"+(a)+(b));
+
+	}
+
+}

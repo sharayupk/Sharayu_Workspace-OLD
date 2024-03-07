@@ -1,0 +1,39 @@
+package tests;
+
+import java.io.IOException;
+
+import org.openqa.selenium.WebDriver;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Test;
+
+import pageObjects.LandingRegPage;
+import pageObjects.RegistrationPage;
+import resources.Base;
+
+public class RegisterTest extends Base {
+
+	public WebDriver driver;
+
+	@BeforeMethod
+	public void openApplication() throws IOException {
+		driver = initializeDriver();
+		driver.get(prop.getProperty("url"));
+	}
+
+	@Test(dataProvider="getRegisterData")
+	public void registerTest() throws InterruptedException {
+		LandingRegPage landingreg = new LandingRegPage(driver);
+		landingreg.myAccountDropdown().click();
+		Thread.sleep(3000);
+		landingreg.registerOption().click();
+		
+		RegistrationPage registerpage=new RegistrationPage(driver);
+	}
+
+	@AfterMethod
+	public void tearDown() {
+		driver.close();
+	}
+
+}

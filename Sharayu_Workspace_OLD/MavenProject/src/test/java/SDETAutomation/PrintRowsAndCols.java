@@ -1,0 +1,41 @@
+package SDETAutomation;
+
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.Test;
+
+public class PrintRowsAndCols 
+{
+	@Test
+	public void handleWebTable() throws InterruptedException
+	{
+		System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"\\Drivers\\chromedriver.exe");
+		WebDriver driver=new ChromeDriver();
+		driver.get("D:\\Sharayu_Workspace\\MavenProject\\PracticeExamples\\WebTable.html");
+		driver.manage().window().maximize();
+		driver.manage().timeouts().implicitlyWait(2000,TimeUnit.SECONDS);
+
+		int rows=driver.findElements(By.xpath("/html/body/table/tbody/tr")).size();
+		System.out.println("Total No. Of Rows---->"+rows);
+
+		int cols=driver.findElements(By.xpath("/html/body/table/tbody/tr/th")).size();
+		System.out.println("Total No. Of Cols---->"+cols);
+
+		for(int i=2;i<=rows;i++)
+		{
+			for(int j=1;j<=cols;j++)
+			{
+				System.out.print(driver.findElement(By.xpath("/html/body/table/tbody/tr["+i+"]/td["+j+"]")).getText()+"    ");
+	        }
+
+			System.out.println();
+		}
+
+
+	}
+}
+
+

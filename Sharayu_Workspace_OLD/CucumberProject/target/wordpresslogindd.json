@@ -1,0 +1,92 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "Login to Wordpress Application with valid credentials",
+        "description": "",
+        "id": "login-to-wordpress-application;login-to-wordpress-application-with-valid-credentials",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 8994391354,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "user is already on login page",
+            "match": {
+              "location": "WordpressLoginDDStepDef.user_is_already_on_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 11700945,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "title of login page is Log In ‹ Wordpress Demo Site at Demo.Center — WordPress",
+            "match": {
+              "location": "WordpressLoginDDStepDef.title_of_login_page_is_Log_In_Wordpress_Demo_Site_at_Demo_Center_WordPress()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 349169367,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user enters \"admin\" and \"demo123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "admin",
+                  "offset": 13
+                },
+                {
+                  "val": "demo123",
+                  "offset": 25
+                }
+              ],
+              "location": "WordpressLoginDDStepDef.user_enters_and(String,String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1662072170,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "clicks on login button",
+            "match": {
+              "location": "WordpressLoginDDStepDef.clicks_on_login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 9795921,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user is on home page",
+            "match": {
+              "location": "WordpressLoginDDStepDef.user_is_on_home_page()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Login to Wordpress Application",
+    "description": "",
+    "id": "login-to-wordpress-application",
+    "keyword": "Feature",
+    "uri": "./src/test/java/Features/WordpressLoginDD.feature"
+  }
+]

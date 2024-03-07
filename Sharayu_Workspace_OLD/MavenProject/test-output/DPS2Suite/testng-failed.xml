@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [DPS2Suite]">
+  <test thread-count="5" name="DPS2Test(failed)">
+    <classes>
+      <class name="TestNGFramework.DPS2LoginPage">
+        <methods>
+          <include name="loginpage" invocation-numbers="0 1"/>
+        </methods>
+      </class> <!-- TestNGFramework.DPS2LoginPage -->
+    </classes>
+  </test> <!-- DPS2Test(failed) -->
+</suite> <!-- Failed suite [DPS2Suite] -->

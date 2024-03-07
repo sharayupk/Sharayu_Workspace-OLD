@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;Pages.BookUKChapter2Page&apos; to &apos;BookUKChapter4Page&apos;&#x0D;&#x0A;- Original project: &apos;MavenProject&apos;&#x0D;&#x0A;- Original element: &apos;Pages.BookUKChapter2Page&apos;&#x0D;&#x0A;- Renamed element: &apos;Pages.BookUKChapter4Page&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;BookUKChapter2Page&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src\/main\/java&lt;Pages{BookUKChapter2Page.java[BookUKChapter2Page" matchStrategy="1" name="BookUKChapter4Page" qualified="false" references="true" similarDeclarations="false" stamp="1586254547707" textual="false" version="1.0"/>
+</session>

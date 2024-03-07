@@ -1,0 +1,38 @@
+package tests;
+
+import org.openqa.selenium.WebDriver;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.DataProvider;
+import org.testng.annotations.Test;
+
+import pageObjects.LandingPage;
+import resources.Base;
+
+public class LoginPageTest extends Base {
+
+	WebDriver driver;
+
+	@BeforeMethod
+	public void openApplication() {
+		driver.get(System.getProperty("url"));
+
+	}
+
+	@Test(dataProvider="getLoginData")
+	public void loginTest(String email,String password,String status) {
+		
+		LandingPage landingPage=new LandingPage(driver);
+		landingPage.clickonmyAccountDrpDown();
+		landingPage.clickonloginLink();
+		
+
+	}
+
+	@DataProvider
+	public Object[][] getLoginData() {
+		Object[][] data = { { "arun.selenium@gmail.com", "Second@123", "Success" },
+				{ "dummy@test.com", "1234", "Failure" } };
+		return data;
+	}
+
+}

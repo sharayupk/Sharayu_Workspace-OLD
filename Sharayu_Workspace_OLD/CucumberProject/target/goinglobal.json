@@ -1,0 +1,270 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 13,
+        "name": "Register user on GoinGlobal Site",
+        "description": "",
+        "id": "goinglobal-registration-form;register-user-on-goinglobal-site;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 4377397924,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "browser is launched",
+            "match": {
+              "location": "GoinGlobalRegStepDef.browser_is_launched()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 4662954005,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "register form is opened",
+            "match": {
+              "location": "GoinGlobalRegStepDef.register_form_is_sopened()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 489182532,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I enters name as \"Raj\" and phone as\"7865497657\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Raj",
+                  "offset": 18
+                },
+                {
+                  "val": "7865497657",
+                  "offset": 36
+                }
+              ],
+              "location": "GoinGlobalRegStepDef.i_enters_name_as_and_phone_as(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 443559734,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I enters organization as\"J.S.P.M\" and department as \"IT\" and title as \"Master\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "J.S.P.M",
+                  "offset": 25
+                },
+                {
+                  "val": "IT",
+                  "offset": 53
+                },
+                {
+                  "val": "Master",
+                  "offset": 71
+                }
+              ],
+              "location": "GoinGlobalRegStepDef.i_enters_organization_as_and_department_as_and_title_as(String,String,String)"
+            },
+            "matchedColumns": [
+              2,
+              3,
+              4
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 284254287,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I enters email as \"raj@gmail.com\" and comments as \"Good\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "raj@gmail.com",
+                  "offset": 19
+                },
+                {
+                  "val": "Good",
+                  "offset": 51
+                }
+              ],
+              "location": "GoinGlobalRegStepDef.i_enters_email_as_and_comments_as(String,String)"
+            },
+            "matchedColumns": [
+              5,
+              6
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3438390361,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I clicks on notrobot box and submit button",
+            "match": {
+              "location": "GoinGlobalRegStepDef.i_clicks_on_notrobot_box_and_submit_button()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "line": 14,
+        "name": "Register user on GoinGlobal Site",
+        "description": "",
+        "id": "goinglobal-registration-form;register-user-on-goinglobal-site;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 3927783695,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "browser is launched",
+            "match": {
+              "location": "GoinGlobalRegStepDef.browser_is_launched()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 5035811674,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "register form is opened",
+            "match": {
+              "location": "GoinGlobalRegStepDef.register_form_is_sopened()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 304864799,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I enters name as \"Sneha\" and phone as\"8365445766\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Sneha",
+                  "offset": 18
+                },
+                {
+                  "val": "8365445766",
+                  "offset": 38
+                }
+              ],
+              "location": "GoinGlobalRegStepDef.i_enters_name_as_and_phone_as(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 359148557,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I enters organization as\"D.Y Patil\" and department as \"CS\" and title as \"Bachelor\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "D.Y Patil",
+                  "offset": 25
+                },
+                {
+                  "val": "CS",
+                  "offset": 55
+                },
+                {
+                  "val": "Bachelor",
+                  "offset": 73
+                }
+              ],
+              "location": "GoinGlobalRegStepDef.i_enters_organization_as_and_department_as_and_title_as(String,String,String)"
+            },
+            "matchedColumns": [
+              2,
+              3,
+              4
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 251533143,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I enters email as \"sneha@gmail.com\" and comments as \"Good\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "sneha@gmail.com",
+                  "offset": 19
+                },
+                {
+                  "val": "Good",
+                  "offset": 53
+                }
+              ],
+              "location": "GoinGlobalRegStepDef.i_enters_email_as_and_comments_as(String,String)"
+            },
+            "matchedColumns": [
+              5,
+              6
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3252792201,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I clicks on notrobot box and submit button",
+            "match": {
+              "location": "GoinGlobalRegStepDef.i_clicks_on_notrobot_box_and_submit_button()"
+            },
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "GoinGlobal Registration Form",
+    "description": "",
+    "id": "goinglobal-registration-form",
+    "keyword": "Feature",
+    "uri": "./src/test/java/Features/GoinGlobalReg.feature"
+  }
+]
